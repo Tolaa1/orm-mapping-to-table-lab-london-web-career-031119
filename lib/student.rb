@@ -49,7 +49,7 @@ class Student
 attr_accessor :name, :grade
 attr_reader :id
 
-def initialize( id=nil, name, grade)
+def initialize(id=nil, name, grade)
   @id = id
   @name = name
   @grade = grade
@@ -77,7 +77,7 @@ end
 
 def save
   sql = <<-SQL
-    INSERT INTO students (id=nil, name, grade)
+    INSERT INTO students (id==nil, name, grade)
     VALUES (?, ?)
   SQL
 
