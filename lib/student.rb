@@ -86,7 +86,7 @@ def save
 
 end
 
-def self.create(name:, grade:)
+def self.create(name:, grade:@grade)
   student = Student.new(name, grade)
   student.save
   student
